@@ -1,6 +1,8 @@
 //state's checkboxes
 let checkboxes = document.querySelectorAll("input:checked");
 
+let selectAll = document.getElementById("selectAll")
+
 //select state
 let select = document.getElementById("filterstates");
 
@@ -100,6 +102,22 @@ fetch("../scripts/house.json")
         return makeFilterArray(house, enabledSettings);
       }); 
     });
+    selectAll.addEventListener('change', function(){
+      let enabledSettings = Array.from(checkboxes) // Convert checkboxes to an array to use filter and map.                              
+        .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.                              
+        .map(i => i.value); // Use Array.map to extract only the checkbox values from the array of objects.
+        function makeFilterArray(members, enabledSettings) {
+          let filterarr = [];
+          members.forEach(members => {
+            if (enabledSettings.length !== 0) {
+              if (enabledSettings.includes(members.party)) {
+              filterarr.push(members);
+              } return buildTable(filterarr)
+            }
+          })
+        }
+        return makeFilterArray(senate, enabledSettings);
+      }); 
     select.addEventListener("click", function (e) { // SELECT STATE FILTER
       let stateSelected = e.target.value; // get option value from clicked option
       function filterByState(members, stateSelected) {
@@ -148,4 +166,13 @@ function buildDropdown(states) {
   });
 };
 buildDropdown(states);
+ 
+//Multicheckbox
+function toggle(source) {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] != source)
+            checkboxes[i].checked = source.checked;
+    }
+}
  
