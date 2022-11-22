@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="">
+  <meta name="author" content="MarinaColinas">
+
+  <meta property="og:title" content="TGIF">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/media/favicon-16x16.png">
+  <link rel="mask-icon" href="../assets/media/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>TGIF</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="heading">
+      <img src="../assets/media/logo.png" alt="TGIF Logo">
+      <h1>Transparent Government in Fact (TGIF)</h1>
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M.05 3.555A2 2 0 0  2 2h12a2 2 0 0  .95 .555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 .808-.144l-6.57-4.027L8 9.586l-.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+        </svg> info@tgif.net
+      </p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TGIF</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Congress 117
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="house.html">House</a></li>
+                <li><a class="dropdown-item" href="senate.html">Senate</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Attendance
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="house-attendance.html">House</a></li>
+                <li><a class="dropdown-item" href="senate-attendance.html">Senate</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Loyalty
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="house-loyalty.html">House</a></li>
+                <li><a class="dropdown-item" href="senate-loyalty.html">Senate</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <article class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h2>Attendance</h2>
+          <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house.
+            Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates
+            continue even if a majority is not present.
+          </p>
+          <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye"
+            or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a
+            roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a
+            tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 class="alignRight">House at a glance</h3>
+          <table class="table table-dark p-3">
+            <thead>
+              <tr>
+                <th scope="col">Party</th>
+                <th scope="col">No of Representatives</th>
+                <th scope="col">%Votes with Party</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Democrats</th>
+                <td id="demoReps"></td>
+                <td id="demoPercen"></td>
+              </tr>
+              <tr>
+                <th>Republicans</th>
+                <td id="repuReps"></td>
+                <td id="repuPercen"></td>
+              </tr>
+              <tr>
+                <th>Independents</th>
+                <td id="indeReps"></td>
+                <td id="indePercen"></td>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <td id="totalReps"></td>
+                <td id="totalPercen"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-6">
+          <h4>Least Engaged (Bottom 10% Attendance)</h4>
+          <table class="table table-dark p-3">
+            <thead>
+              <th scope="col">Name</th>
+              <th scope="col">No Missed Votes</th>
+              <th scope="col"> % Missed</th>
+            </thead>
+            <tbody id="houseBottomAttendance">
+              <!-- Populate from javascript file in here. -->
+            </tbody>
+          </table>
+        </div>
+        <div class="col-6">
+          <h4>Most Engaged (Top 10% Attendance)</h4>
+          <table class="table table-dark p-3">
+            <thead>
+              <th scope="col">Name</th>
+              <th scope="col">No Missed Votes</th>
+              <th scope="col"> % Missed</th>
+            </thead>
+            <tbody id="houseTopAttendance">
+              <!-- Populate from javascript file in here. -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </article>
+<br><br><br>
+  <footer class="fixed-bottom">
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0   0 8a8 8 0 0  16 0ZM8.146 4.992c.961 0 .641.633 .729 .512h1.295v-.088c-.094-.518-.348-2.572-3.03-2.572-2.068 0-3.269 .377-3.269 3.638v1.073c0 2.267 .178 3.603 3.27 3.603 .675 0 2.93-.02 3.029-2.467v-.093H9.875c-.088.832-.75 .418-.729 .418-.224 0-.927-.891-.927-2.461v-.06c0-.583.715-2.503 .927-2.503Z" />
+      </svg> 2022 TGIF | All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="../scripts/house-attendance.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

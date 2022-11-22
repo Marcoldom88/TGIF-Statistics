@@ -1,0 +1,77 @@
+.heading{
+  background-color:#212529;
+  height: 120px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+};
+.heading h1{
+ position: relative;
+ float:left;
+ right: 50px;
+}
+.heading p { 
+  position:relative;
+  float: right;
+  right: 20px;
+  bottom: 40px;
+}
+.heading img { 
+  position: absolute;
+  left: 25px;
+  top: 20px;
+}
+.navbar {
+  width: 100%;
+  margin-bottom: 50px;
+}
+footer {
+  text-align: center;
+  color: white;
+  background-color: #212529;
+}
+table {
+  max-width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tbody a {
+  color: white;
+}
+.stateFilterClass {
+  position: relative;
+  float: right;
+  bottom: 30px;
+}
+
+article{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article p {
+  text-align: justify;
+}
+
+.flex{
+  display: flex;
+}
+
+.homeImage {
+ float: right;
+ width: 200px;
+ margin: 40px;
+ position: relative;
+ top: 200px;
+}
+.container-fluid{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignRight {
+  text-align: right;
+}
